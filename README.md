@@ -16,7 +16,7 @@ A custom 1D Convolution (`Conv1d`) operator for PyTorch, written from scratch us
 
 ```bash
 # Clone the repository
-git clone [https://github.com/tht2005/clAtenOps.git](https://github.com/tht2005/clAtenOps.git)
+git clone https://github.com/tht2005/clAtenOps.git
 cd clAtenOps
 
 # Install the extension
@@ -30,7 +30,7 @@ import torch
 import clAtenOps
 
 # 1. Initialize the custom OpenCL layer
-layer = opencl_conv_backend.Conv1d(
+layer = clAtenOps.Conv1d(
     in_ch=3, 
     out_ch=5, 
     k_size=16, 
